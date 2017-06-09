@@ -1,0 +1,17 @@
+# Application
+
+app:
+  build: .
+  env_file: .env
+  links:
+    - postgres:postgres
+  ports:
+    - "5001:80"
+
+# Postgres DB
+# Data persistance
+
+postgres:
+  image: "postgres:9.4.5"
+  volumes:
+    - dmao-jwt-postgres:/var/lib/postgresql/data

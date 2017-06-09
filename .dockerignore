@@ -1,0 +1,6 @@
+.env*
+.byebug_history
+.rbenv-gemsets
+coverage/
+log/
+tmp/
